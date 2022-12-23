@@ -1,0 +1,26 @@
+.select{
+    top:8px;
+    left:8px;
+    /* right:18px; */
+    /* width:; */
+    /* width: auto; */
+    /* right: 8px; */
+    margin-right: 18px !important;
+    /* margin-left: 18px; */
+    /* margin: 16px; */
+
+    padding: 2%; 
+}
+.MuiSelect-select{
+    /* left:8px; */
+
+    /* margin-left: 8px; */
+    /* padding-right: 8px;  */
+
+}
+.radio{
+    /* top:8px; */
+    left:8px;
+    right: 8px;
+    padding-left: 8px;
+}
