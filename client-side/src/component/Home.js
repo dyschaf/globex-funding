@@ -2,6 +2,7 @@
 // import {Image} from 'react-bootstrap';
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import RandomInfo1 from "./RandomInfo1"
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
@@ -11,6 +12,7 @@ import "../App.css"
 function Home() {
 
     return (
+        <>
         <div className='background-pic' >
             <div className='background-text-container'>
                 <div className='background-text'>
@@ -22,6 +24,8 @@ function Home() {
                 </div>
             </div>
         </div>
+        <RandomInfo1/>
+        </>
         );
     }
     // "C:\Users\Dovid Schaffel\Documents\dev\Cash_advance\client\src\img\Background.jpg"

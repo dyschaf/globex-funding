@@ -48,6 +48,7 @@
   /* background-repeat:no-repeat; */
   
 }
+
 .background-text-container{
   display: 'flex';
   justify-content: 'center';
@@ -88,3 +89,18 @@
   padding-bottom: 50px;
 }
 /* test */
+/* #flexable{
+  background-image: url("./component/img/flexable.jpg");
+
+}
+#Quick2{
+  background-image: url("./component/img/Quick2.jpg");
+
+} */
+#completed{
+  background-image: url("./component/img/completed.png");
+  height: 50px;
+  width: 150px;
+  /* block-size: auto; */
+
+}
