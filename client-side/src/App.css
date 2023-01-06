@@ -97,10 +97,24 @@
   background-image: url("./component/img/Quick2.jpg");
 
 } */
-#completed{
+/* #completed{
   background-image: url("./component/img/completed.png");
   height: 50px;
-  width: 150px;
+  width: 150px; */
   /* block-size: auto; */
 
+/* } */
+.card-body{
+  background-color: rgba(196, 159, 35, 0.795);
+  margin: 12vw;
+}
+
+.ym_icon_block {
+  width: auto;
+  /* font-size: 16px; */
+}
+.ym_icon_blocks img {
+  width: 80px;
+  height: 100px
+  /* font-size: 16px; */
 }

@@ -4,6 +4,7 @@ import React from 'react';
 import Nav_page from './component/Nav';
 import Home from './component/Home';
 import Forms from './component/Forms';
+import IsoPartnerships from './component/IsoPartnerships';
 import ErrorBoundary from './component/ErrorBoundary'
 import { Routes, Route, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/form" element={<Forms/>} />
+          <Route path="/iso-partnerships" element={<IsoPartnerships/>} />
         </Routes>
       </ErrorBoundary>
         
