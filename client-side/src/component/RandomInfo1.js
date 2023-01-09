@@ -25,7 +25,7 @@ function RandomInfo1() {
                         <img id="Quick2"src={quick2} alt=""/>
                     </div>
                     <h4> Quick Direct Deposit</h4>
-                    <p>We dedicated to provide approvals within hours and to have funds deposited into your bank account same-day.</p>
+                    <p>We are dedicated to provide approvals within hours and to have funds deposited into your bank account same-day.</p>
                 </div>
             </div>
             <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
