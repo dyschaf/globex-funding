@@ -130,3 +130,184 @@
   padding-bottom: 50px;
   
 }
+.gray{
+  color: gray;
+}
+.gold{
+  color:orange
+  /* color: rgb(243, 218, 78); */
+}
+.blue{
+  color:rgb(52, 52, 247)
+}
+.white{
+  color: white;
+}
+#underline{
+  /* padding-right : 0px; */
+  background-position: 50% 100%;
+  background-size: contain;
+  background-image: URL('./component/img/Underline.svg');
+  background-repeat: no-repeat;
+
+}
+.rec-wrapper{
+  display: flex;
+  width: 380px;
+  height: 150px;
+  align-items: center;
+}
+.cards-background{
+  /* -ms-grid-row: span 1; */
+  grid-row-start: span 1;
+  /* -ms-grid-row-span: 1; */
+  grid-row-end: span 1;
+  /* -ms-grid-column: span 3; */
+  grid-column-start: span 3;
+  /* -ms-grid-column-span: 3; */
+  grid-column-end: span 3;
+  /* -ms-grid-column-align: center; */
+  justify-self: center;
+  /* display: none; */
+  /* position: absolute; */
+  /* background-color: black; */
+    /* top: 90.9vh; */
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    /* display: -ms-flexbox; */
+    display: flex;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin-right: 50px; */
+    /* padding-left:5vw ; */
+    /* padding-right:5vw ; */
+    /* width: 1200px; */
+    /* -webkit-box-pack: justify; */
+    /* -webkit-justify-content: space-between; */
+    /* -ms-flex-pack: justify; */
+    /* justify-content: space-between; */
+    justify-content: space-between;
+
+}
+.rec-txt-box{
+  /* margin-top: 5px; */
+  background-color: white;
+  padding: 10px;
+  margin-left: -37px;
+  padding: 25px 15px 25px 50px;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 30px 50px 0 rgb(15 56 118 / 12%);
+
+  /* border-radius: ; */
+}
+.rec-icon-box {
+  position: relative;
+  height: 50%;
+  padding: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(15, 56, 118, 0.2);
+  border-radius: 50px;
+  background-color: #fff;
+  background-image: none;
+  background-size: auto;
+  background-repeat: repeat;
+  box-shadow: 1px 5px 12px 0 rgb(15 56 118 / 15%);
+  text-align: center;
+}
+.heading-1.flxble-heading {
+  max-width: 95%;
+}
+
+.heading-1 {
+  padding-bottom: 25px;
+  font-size: 46px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: left;
+}
+sup {
+  top: -0.5em;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.grid {
+  grid-column-gap: 107px;
+  grid-template-areas: "Area";
+  -ms-grid-columns: 1.25fr 107px 1fr;
+  grid-template-columns: 1.25fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+.w-layout-grid {
+  /* display: -ms-grid; */
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+.list-wrapper {
+  /* display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox; */
+  display: flex;
+  margin-bottom: 25px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+}
+.list-icon {
+  padding-right: 20px;
+}
+.rght-col-lst {
+  margin-top: 40px;
+  padding: 32px 64px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #aeaeae;
+  border-radius: 18px;
+  background-color: #fff;
+  box-shadow: 0 15px 35px 0 rgb(15 56 118 / 15%);
+}
+.flxble-col-lst {
+  /* display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox; */
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.mycontain {
+  max-width: 1200px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
