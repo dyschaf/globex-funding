@@ -16,6 +16,8 @@
 .fixed{
   width: 100%;
   position: fixed;
+  z-index: 1;
+  /* position: relative; */
  
 }
 .App-header {
@@ -41,6 +43,9 @@
     transform: rotate(360deg);
   }
 }
+/* .sticky{
+  position:;
+} */
 .background-pic{
   
   background-image: url("./component/img/Background.jpg");
@@ -53,14 +58,16 @@
   display: 'flex';
   justify-content: 'center';
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.452) ;
+  background-color: rgba(0, 0, 0, 0.591) ;
   width:100%;
+  padding-top: 17vh;
+  /* height: ; */
   /* height:55vh; */
-  /* padding: 20%; */
+  /* padding: 20%;
   padding-top: 17vh;
   padding-right: 5vw;
-  padding-left: 10vw;
-  padding-bottom: 5vh;
+  padding-left: 10vw;*/
+  /* padding-bottom: 5vh; */
 
  
 
@@ -68,12 +75,15 @@
 .background-text{
   
   /* margin-top: 50%; */
-  background-color: rgba(0, 0, 0, 0.393);
+  background-color: rgba(0, 0, 0, 0.628);
   padding: 20px;
+  width: 75vw;
   padding-top: 5vh;
-  padding-right: 20%;
+  margin-left:12vw ;
+  /* margin-right:2vw ; */
+  /* padding-right: 20%;
   padding-bottom: 5vh;
-  padding-left: 20%;
+  padding-left: 20%; */
   border-radius: 4%;
   /* box-shadow: 0 0 0 1px solid black; */
 
@@ -158,6 +168,9 @@
   align-items: center;
 }
 .cards-background{
+  padding-bottom: 70px;
+  padding-top: 70px;
+
   /* -ms-grid-row: span 1; */
   grid-row-start: span 1;
   /* -ms-grid-row-span: 1; */
@@ -203,7 +216,7 @@
   /* border-radius: ; */
 }
 .rec-icon-box {
-  position: relative;
+  position:relative;
   height: 50%;
   padding: 15px;
   border-style: solid;
@@ -278,7 +291,8 @@ sub, sup {
   padding: 32px 64px;
   border-style: solid;
   border-width: 1px;
-  border-color: #aeaeae;
+  border-color: orange;
+  /* border-color: #aeaeae; */
   border-radius: 18px;
   background-color: #fff;
   box-shadow: 0 15px 35px 0 rgb(15 56 118 / 15%);
