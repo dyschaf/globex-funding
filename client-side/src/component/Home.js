@@ -4,6 +4,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import RandomInfo1 from "./RandomInfo1"
 import RandomInfo2 from "./RandomInfo2"
+import RandomInfo3 from "./RandomInfo3"
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
@@ -28,7 +29,7 @@ function Home() {
                 </div>
                 
                 <div id="w-node-_664239d4-ff38-e477-4f15-a0aad0c916f5-1fe1565b" className="cards-background tb-hide">
-                    <div class="rec-wrapper">
+                    <div className="rec-wrapper">
                         <div className="rec-icon-box">
                             <img src="https://uploads-ssl.webflow.com/61f3ea34d716a5986fe5ec74/61f53e72fef6f26fe9fe15f4_Briefcase.svg" loading="lazy" alt="" className="rec-icon"></img>
                         </div>
@@ -69,6 +70,8 @@ function Home() {
         </div>
         {/* <RandomInfo1/> */}
         <RandomInfo2/>
+        <RandomInfo3/>
+
         </>
         );
     }
