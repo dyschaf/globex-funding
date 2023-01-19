@@ -340,6 +340,7 @@ sub, sup {
   max-width: 940px;
 }
 .busi-card-style.crd-shadow {
+  /* box-shadow: 0 35px 50px 0 rgb(232, 170, 56); */
   box-shadow: 0 35px 50px 0 #2b5697;
 }
 
@@ -370,6 +371,7 @@ img {
   padding-top: 140px;
   padding-bottom: 140px;
   background-color: #0f3876;
+  /* background-color: orange; */
   background-image: url(https://uploads-ssl.webflow.com/61f3ea3…/61fa635…_triangle.png);
   background-position: 0px 0px;
   background-size: auto;
@@ -390,7 +392,7 @@ img {
 @media screen and (max-width: 859px){
 .w-col {
     padding: 5px;
-    width: 100%;
+    width: 99%;
     left: auto;
     right: auto;
 }}
