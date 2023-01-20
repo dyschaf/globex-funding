@@ -434,6 +434,7 @@ function Forms() {
     },
   ]
   return (
+    <div className='backgroundForm'>
     <form className="form"method='POST' action='/applied'>
       <Box component={"form"} sx={{ m: 1 }} noValidate autoComplete={"off"}>
         <h1 className='padding-top-bottom'>Business Information</h1>
@@ -854,6 +855,7 @@ function Forms() {
       </Button>
     </Form> */}
     </form>
+    </div>
   );
 }
 
