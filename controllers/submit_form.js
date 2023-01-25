@@ -1,9 +1,10 @@
-import submitted_form from "../models/submitted_form.js";
+// import submitted_form from "../models/submitted_form.js";
 
 
 
 export const submitted = async (req, res) => {
   const  data  = req.body;
+  console.log(data)
   
  
   // try {

@@ -432,7 +432,18 @@ function Forms() {
       value: 'WY',
       label: 'Wyoming',
     },
+    
   ]
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(event)
+    const data = new FormData(event.currentTarget);
+    const values = Object.fromEntries(data.entries());
+    // fetch('/submit')
+
+
+    console.log('submitting', values);
+  };
   return (
     <div className='backgroundForm'>
     <form className="form"method='POST' action='/applied'>
@@ -483,7 +494,6 @@ function Forms() {
             </MenuItem>
           ))}
         </TextField>
-                
         <TextField
           sx={{ m: 1 }}
           id="email"
@@ -822,13 +832,31 @@ function Forms() {
           
           // onChange={(e) => setEmail(e.target.value)}
         />
+                
+        
+        <br></br>
+        <TextField
+          // width="550px"
+          sx={{ m: 1 }}
+          id="subit"
+          name="submit"
+          type="submit"
+          label="Submit"
+          variant="outlined"
+          size="small"
+          // width
+          // required
+          // helperText='Please enter a number from 1 to 100.'
+          onClick={handleSubmit}
+          // {/* // onChange={(e) => setEmail(e.target.value)} */}
+        />
       </Box>
       
-      <Button variant="contained" >test
+      {/* <Button variant="contained" >test */}
       {/* // onClick={handleAction} */}
       
         {/* {props.title} */}
-      </Button>
+      {/* </Button> */}
       <div>
         {/* <p>{msg}</p> */}
       </div>
