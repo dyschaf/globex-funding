@@ -1,6 +1,7 @@
 // import Button from 'react-bootstrap/Button';
 // import Form from 'react-bootstrap/Form';
-import { useState, useEffect, useContext } from "react";
+// import { useState as UseState, useEffect, useContext } from "react";
+import React, {useState} from 'react';
 // import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 // import * as React from 'react';
@@ -436,51 +437,52 @@ function Forms() {
     },
     
   ]
-  const handleSubmit = async() => {
-    // event.preventDefault();
+  const [businessName, setBusinessName] = useState("");
+  const [DBA, setDBA] = useState("");
+  const [entity, setEntity] = useState("");
+  const [businessEmail, setBusinessEmail] = useState("");
+  const [bussinessPhone, setBussinessPhone] = useState("");
+  const [bussinessFax, setBussinessFax] = useState("");
+  const [website, setWebsite] = useState("");
+  const [federalTaxID_EIN, setFederalTaxID_EIN] = useState("");
+  const [dateOfIncorporation, setDateOfIncorporation] = useState("");
+  const [Industry, setIndustry] = useState("");
+  const [businessAddress, setBusinessAddress] = useState("");
+  const [cityBusiness, setCityBusiness] = useState("");
+  const [stateBusiness, setStateBusiness] = useState("");
+  const [zipCodeBusiness, setZipCodeBusiness] = useState("");
+  const [fundingAmount, setFundingAmount] = useState("");
+  const [anyOtherLoans, setAnyOtherLoans] = useState("");
+  const [seasonalBusiness, setSeasonalBusiness] = useState("");
+  const [annualGrossSales, setAnnualGrossSales] = useState("");
+  const [averageDeposit, setAverageDeposit] = useState("");
+  const [ownerName, setOwnerName] = useState("");
+  const [ownerNameMiddle, setOwnerNameMiddle] = useState("");
+  const [ownerNameLast, setOwnerNameLast] = useState("");
+  const [ownerAddress, setOwnerAddress] = useState("");
+  const [ownerCity, setOwnerCity] = useState("");
+  const [ownerState, setOwnerState] = useState("");
+  const [ownerZipCode, setOwnerZipCode] = useState("");
+  const [ownerBOD, setOwnerBOD] = useState("");
+  const [SSN, setSSN] = useState("");
+  const [creditScore, setCreditScore] = useState("");
+  const [percentageOfOwnership, setPercentageOfOwnership] = useState("");
+  const [msg, setMsg] = useState("");
+  const HandleSubmit = async(e) => {
+    e.preventDefault();
     // console.log(event)
     // const data = new FormData(event.currentTarget);
     // const values = Object.fromEntries(data.entries());
     // fetch('/submit')
 
-    const [businessName, setBusinessName] = useState("");
-    const [DBA, setDBA] = useState("");
-    const [entity, setEntity] = useState("");
-    const [businessEmail, setBusinessEmail] = useState("");
-    const [bussinessPhone, setBussinessPhone] = useState("");
-    const [bussinessFax, setBussinessFax] = useState("");
-    const [website, setWebsite] = useState("");
-    const [federalTaxID_EIN, setFederalTaxID_EIN] = useState("");
-    const [dateOfIncorporation, setDateOfIncorporation] = useState("");
-    const [industry, setIndustry] = useState("");
-    const [businessAddress, setBusinessAddress] = useState("");
-    const [cityBusiness, setCityBusiness] = useState("");
-    const [stateBusiness, setStateBusiness] = useState("");
-    const [zipCodeBusiness, setZipCodeBusiness] = useState("");
-    const [fundingAmount, setFundingAmount] = useState("");
-    const [anyOtherLoans, setAnyOtherLoans] = useState("");
-    const [seasonalBusiness, setSeasonalBusiness] = useState("");
-    const [annualGrossSales, setAnnualGrossSales] = useState("");
-    const [averageDeposit, setAverageDeposit] = useState("");
-    const [ownerName, setOwnerName] = useState("");
-    const [ownerNameMiddle, setOwnerNameMiddle] = useState("");
-    const [ownerNameLast, setOwnerNameLast] = useState("");
-    const [ownerAddress, setOwnerAddress] = useState("");
-    const [ownerCity, setOwnerCity] = useState("");
-    const [ownerState, setOwnerState] = useState("");
-    const [ownerZipCode, setOwnerZipCode] = useState("");
-    const [ownerBOD, setOwnerBOD] = useState("");
-    const [SSN, setSSN] = useState("");
-    const [creditScore, setCreditScore] = useState("");
-    const [percentageOfOwnership, setPercentageOfOwnership] = useState("");
-    const [msg, setMsg] = useState("");
-    console.log('submitting', values);
+    
+    // console.log('submitting', values);
     // const handleAction = async () => {
         try{
           const response = await axios.post(
             "/form",
             {
-              businessName,DBA,entity,businessEmail,bussinessPhone,bussinessFax,website,federalTaxID_EIN,dateOfIncorporation,industry,businessAddress,
+              businessName,DBA,entity,businessEmail,bussinessPhone,bussinessFax,website,federalTaxID_EIN,dateOfIncorporation,Industry,businessAddress,
               cityBusiness,stateBusiness,zipCodeBusiness,fundingAmount,anyOtherLoans,seasonalBusiness,annualGrossSales,averageDeposit,ownerName,ownerNameMiddle,ownerNameLast,ownerAddress,ownerCity
               ,ownerState,ownerZipCode,ownerBOD,SSN,creditScore,percentageOfOwnership
             },
@@ -758,7 +760,7 @@ function Forms() {
           size='small'
           helperText="What were your last 3 months average deposit volume per month?"
           required
-          onChange={(e) => setAnnualGrossSales(e.target.value)}
+          onChange={(e) => setAverageDeposit(e.target.value)}
         />
         <h1 className='padding-top-bottom'>Business Owner Information</h1>
         
@@ -911,7 +913,7 @@ function Forms() {
           // width
           // required
           // helperText='Please enter a number from 1 to 100.'
-          onClick={handleSubmit}
+          onClick={HandleSubmit}
           // {/* // onChange={(e) => setEmail(e.target.value)} */}
         />
       </Box>

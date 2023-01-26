@@ -1,6 +1,6 @@
 function RandomInfo3(){
     return(
-        <div class="sec-business wf-section">
+        <div className="sec-business wf-section">
             <div className="mycontain w-container">
                 {/* <div className="top-heading w-row">
                     <div className="w-col w-col-6 w-col-stack w-col-small-small-stack w-col-tiny-tiny-stack">
