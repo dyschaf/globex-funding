@@ -1,6 +1,8 @@
 // import Button from 'react-bootstrap/Button';
 // import Form from 'react-bootstrap/Form';
-
+import { useState, useEffect, useContext } from "react";
+// import { useNavigate, Link } from "react-router-dom";
+import axios from "axios";
 // import * as React from 'react';
 // import app.css
 import Box from '@mui/material/Box';
@@ -434,16 +436,71 @@ function Forms() {
     },
     
   ]
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(event)
-    const data = new FormData(event.currentTarget);
-    const values = Object.fromEntries(data.entries());
+  const handleSubmit = async() => {
+    // event.preventDefault();
+    // console.log(event)
+    // const data = new FormData(event.currentTarget);
+    // const values = Object.fromEntries(data.entries());
     // fetch('/submit')
 
-
+    const [businessName, setBusinessName] = useState("");
+    const [DBA, setDBA] = useState("");
+    const [entity, setEntity] = useState("");
+    const [businessEmail, setBusinessEmail] = useState("");
+    const [bussinessPhone, setBussinessPhone] = useState("");
+    const [bussinessFax, setBussinessFax] = useState("");
+    const [website, setWebsite] = useState("");
+    const [federalTaxID_EIN, setFederalTaxID_EIN] = useState("");
+    const [dateOfIncorporation, setDateOfIncorporation] = useState("");
+    const [industry, setIndustry] = useState("");
+    const [businessAddress, setBusinessAddress] = useState("");
+    const [cityBusiness, setCityBusiness] = useState("");
+    const [stateBusiness, setStateBusiness] = useState("");
+    const [zipCodeBusiness, setZipCodeBusiness] = useState("");
+    const [fundingAmount, setFundingAmount] = useState("");
+    const [anyOtherLoans, setAnyOtherLoans] = useState("");
+    const [seasonalBusiness, setSeasonalBusiness] = useState("");
+    const [annualGrossSales, setAnnualGrossSales] = useState("");
+    const [averageDeposit, setAverageDeposit] = useState("");
+    const [ownerName, setOwnerName] = useState("");
+    const [ownerNameMiddle, setOwnerNameMiddle] = useState("");
+    const [ownerNameLast, setOwnerNameLast] = useState("");
+    const [ownerAddress, setOwnerAddress] = useState("");
+    const [ownerCity, setOwnerCity] = useState("");
+    const [ownerState, setOwnerState] = useState("");
+    const [ownerZipCode, setOwnerZipCode] = useState("");
+    const [ownerBOD, setOwnerBOD] = useState("");
+    const [SSN, setSSN] = useState("");
+    const [creditScore, setCreditScore] = useState("");
+    const [percentageOfOwnership, setPercentageOfOwnership] = useState("");
+    const [msg, setMsg] = useState("");
     console.log('submitting', values);
+    // const handleAction = async () => {
+        try{
+          const response = await axios.post(
+            "/form",
+            {
+              businessName,DBA,entity,businessEmail,bussinessPhone,bussinessFax,website,federalTaxID_EIN,dateOfIncorporation,industry,businessAddress,
+              cityBusiness,stateBusiness,zipCodeBusiness,fundingAmount,anyOtherLoans,seasonalBusiness,annualGrossSales,averageDeposit,ownerName,ownerNameMiddle,ownerNameLast,ownerAddress,ownerCity
+              ,ownerState,ownerZipCode,ownerBOD,SSN,creditScore,percentageOfOwnership
+            },
+            {
+              withCredentials: true,
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          );
+          console.log(response.data);
+          // setAccessToken(response.data);
+          // navigate("/");
+        }
+        catch (e) {
+          setMsg(e.response.data.msg);
+        }
+      // }
   };
+  
   return (
     <div className='backgroundForm'>
     <form className="form"method='POST' action='/applied'>
@@ -459,7 +516,7 @@ function Forms() {
           variant="outlined"
           size="small"
           required
-          // onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setBusinessName(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
@@ -470,7 +527,7 @@ function Forms() {
           variant="outlined"
           size='small'
           required
-          // onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setDBA(e.target.value)}
         />
         <TextField
           // sx={{ m: 1.5 }}
@@ -485,6 +542,7 @@ function Forms() {
           size='small'
           defaultValue="none"
           helperText="Please select your Entity Type"
+          onChange={(e) => setEntity(e.target.value)}
         >
         {/* <TextField id="demo-helper-text-misaligned-no-helper" label="Select-Entity" /> */}
         
@@ -503,7 +561,7 @@ function Forms() {
           variant="outlined"
           size='small'
           required
-          // onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setBusinessEmail(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
@@ -515,7 +573,7 @@ function Forms() {
           size='small'
           required
           inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
-          // onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setBussinessPhone(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
@@ -527,7 +585,7 @@ function Forms() {
           size='small'
           // required
           inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
-          // onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setBussinessFax(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
@@ -539,7 +597,7 @@ function Forms() {
           size='small'
           required
           
-          // onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setWebsite(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
@@ -551,7 +609,7 @@ function Forms() {
           size='small'
           required
           
-          // onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setFederalTaxID_EIN(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
@@ -564,7 +622,7 @@ function Forms() {
           size='small'
           helperText="Date of Incorporation"
           
-          // onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setDateOfIncorporation(e.target.value)}
         />
         {/* <TextField id="demo-helper-text-misaligned-no-helper" label="date" /> */}
         <TextField
@@ -577,6 +635,7 @@ function Forms() {
           defaultValue="none"
           helperText="What industry are you in?"
           required
+          onChange={(e) => setIndustry(e.target.value)}
         >
           {industry.map((option) => (
             <MenuItem key={option.value} value={option.value}>
@@ -594,7 +653,7 @@ function Forms() {
           variant="outlined"
           size="small"
           required
-          // onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setBusinessAddress(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
@@ -605,7 +664,7 @@ function Forms() {
           variant="outlined"
           size="small"
           required
-          // onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setCityBusiness(e.target.value)}
         />
         <TextField
           id="state_business"
@@ -617,6 +676,7 @@ function Forms() {
           defaultValue="none"
           helperText="Please select a State"
           required
+          onChange={(e) => setStateBusiness(e.target.value)}
         >
           {states.map((option) => (
             <MenuItem key={option.value} value={option.value}>
@@ -634,7 +694,7 @@ function Forms() {
           variant="outlined"
           size='small'
           inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
-          // onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setZipCodeBusiness(e.target.value)}
         />
         <br></br>
         <TextField
@@ -647,7 +707,7 @@ function Forms() {
           size='small'
           required
           helperText="Use of Funds and Requested Funding Amount"
-          // onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setFundingAmount(e.target.value)}
         />
         <br></br>
         <FormLabel id="cash-advance-already" className='radio'>Do you currently have any open business loans or cash advances?</FormLabel>
@@ -655,6 +715,7 @@ function Forms() {
           aria-labelledby="demo-radio-buttons-group-label"
           // defaultValue=""
           name="any-other-loans"
+          onChange={(e) => setAnyOtherLoans(e.target.value)}
         >
           <FormControlLabel className='radio' value="Yes" control={<Radio />} label="Yes" />
           <FormControlLabel className='radio' value="No" control={<Radio />} label="No" />
@@ -664,6 +725,7 @@ function Forms() {
           aria-labelledby="demo-radio-buttons-group-label"
           // defaultValue=""
           name="seasonal-business"
+          onChange={(e) => setSeasonalBusiness(e.target.value)}
         >
           <FormControlLabel className='radio' value="Yes" control={<Radio />} label="Yes" />
           <FormControlLabel className='radio' value="No" control={<Radio />} label="No, I'm running all year" />
@@ -678,6 +740,7 @@ function Forms() {
           defaultValue="none"
           helperText="What is your average annual gross sales"
           required
+          onChange={(e) => setAnnualGrossSales(e.target.value)}
         >
           {amount_a_year.map((option) => (
             <MenuItem key={option.value} value={option.value}>
@@ -695,7 +758,7 @@ function Forms() {
           size='small'
           helperText="What were your last 3 months average deposit volume per month?"
           required
-          // onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setAnnualGrossSales(e.target.value)}
         />
         <h1 className='padding-top-bottom'>Business Owner Information</h1>
         
@@ -708,7 +771,7 @@ function Forms() {
           variant="outlined"
           size="small"
           required
-          // onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setOwnerName(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
@@ -718,7 +781,7 @@ function Forms() {
           label="Middle Name"
           variant="outlined"
           size="small"
-          // onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setOwnerNameMiddle(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
@@ -729,7 +792,7 @@ function Forms() {
           variant="outlined"
           size="small"
           required
-          // onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setOwnerNameLast(e.target.value)}
         />
         <br></br>
         <TextField
@@ -741,7 +804,7 @@ function Forms() {
           variant="outlined"
           size="small"
           required
-          // onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setOwnerAddress(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
@@ -752,7 +815,7 @@ function Forms() {
           variant="outlined"
           size="small"
           required
-          // onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setOwnerCity(e.target.value)}
         />
         <TextField
           id="owner-state"
@@ -764,6 +827,7 @@ function Forms() {
           defaultValue="none"
           helperText="Please select a State"
           required
+          onChange={(e) => setOwnerState(e.target.value)}
         >
           {states.map((option) => (
             <MenuItem key={option.value} value={option.value}>
@@ -781,7 +845,7 @@ function Forms() {
           size='small'
           required
           inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
-          // onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setOwnerZipCode(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
@@ -792,7 +856,7 @@ function Forms() {
           variant="outlined"
           size='small'
           helperText="Date of Birth"
-          // onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setOwnerBOD(e.target.value)}
         />
          <TextField
           sx={{ m: 1 }}
@@ -805,7 +869,7 @@ function Forms() {
           size="small"
           required
           inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
-          // onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setSSN(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
@@ -817,12 +881,12 @@ function Forms() {
           size="small"
           required
           helperText='Please enter a number from 300 to 850.'
-          // onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setCreditScore(e.target.value)}
         />
         <TextField
           sx={{ m: 1 }}
-          id="פercentage-of-םwnership"
-          name="פercentage-of-םwnership"
+          id="percentage-of-םwnership"
+          name="percentage-of-םwnership"
           type="number"
           label="Percentage of Ownership"
           variant="outlined"
@@ -830,7 +894,7 @@ function Forms() {
           required
           helperText='Please enter a number from 1 to 100.'
           
-          // onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setPercentageOfOwnership(e.target.value)}
         />
                 
         
