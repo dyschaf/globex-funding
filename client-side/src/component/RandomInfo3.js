@@ -1,5 +1,6 @@
 function RandomInfo3(){
     return(
+        <>
         <div className="sec-business wf-section">
             <div className="mycontain w-container">
                 {/* <div className="top-heading w-row">
@@ -33,11 +34,26 @@ function RandomInfo3(){
                         </div>
                     </div>
                 </div>
-                <a href="/application" className="get-start-btn w-inline-block">
-                    <div className="get-start-txt heading-4">Get Started</div>
+                <br></br>
+                <br></br>
+                {/* <label> */}
+                <a href="/form" className="get-start-btn w-inline-block">
+                <div >Get Started</div>
+    
+                {/* <input  type="button" href="/form" value="Get Started"/> */}
                 </a>
+                {/* </label> */}
+                
+                
+                
             </div>
+            
         </div>
+        <a href="/application" className="get-start-btn w-inline-block">
+        <div className="get-start-txt heading-4">Get Started</div>
+    
+    </a>
+    </>
     )
 }
 export default RandomInfo3
