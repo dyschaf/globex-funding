@@ -1,0 +1,145 @@
+[33mcommit 7e02df287ec66a59f7704d43640e1da02b5a669c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: b041289 b490f3a
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Wed Feb 1 15:48:30 2023 +0200
+
+    Merge branch 'main' of https://github.com/dyschaf/globex-funding
+
+[33mcommit b041289668c825844a1dac83d6236ff85603de86[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Wed Feb 1 15:46:52 2023 +0200
+
+    idk
+
+[33mcommit b490f3a7d128244bf81dacc3c16cbfb8d5071d37[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: 29f61ed a1d2342
+Author: dschaf <schaffeldovid@gmail.com>
+Date:   Sun Jan 29 23:59:33 2023 +0200
+
+    Merge https://github.com/dyschaf/globex-funding
+
+[33mcommit 29f61ed6415ffa0c3de5fcf40723a11495dad750[m
+Author: dschaf <schaffeldovid@gmail.com>
+Date:   Sun Jan 29 23:56:25 2023 +0200
+
+    css tweeks
+
+[33mcommit a1d2342672d3aba2120b225454617012875c17dc[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Fri Jan 27 13:36:13 2023 +0200
+
+    fixed errors
+
+[33mcommit 0d2dd71c5216b3c8ef100722103a5b15e4cb3d6e[m
+Author: dschaf <schaffeldovid@gmail.com>
+Date:   Thu Jan 26 23:44:29 2023 +0200
+
+    adding hooks
+
+[33mcommit e266f13fc29d7ee7dc3aa0cbb3ff91be449053e6[m
+Author: dschaf <schaffeldovid@gmail.com>
+Date:   Thu Jan 26 22:27:21 2023 +0200
+
+    adding hooks
+
+[33mcommit 53be5f03ba63f24dd702d6887b8e9d2c9bc184ed[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Thu Jan 26 19:03:17 2023 +0200
+
+    trying to add set state
+
+[33mcommit 0a08a872f742d2a02a2180f7debfb9a167530208[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Wed Jan 25 23:09:26 2023 +0200
+
+    lighter background
+
+[33mcommit 79bc4c290c6c8bfd084949a582fd8ae4b7bda8f3[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Wed Jan 25 16:53:04 2023 +0200
+
+    handling the form
+
+[33mcommit e4022aac7849863de6eadbce4037c902c890a23d[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Tue Jan 24 18:28:11 2023 +0200
+
+    finished form
+
+[33mcommit 3fc175cc7e74494cd5d9f7847b79e28284b81429[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Fri Jan 20 10:59:32 2023 +0200
+
+    finished form
+
+[33mcommit c86edf41e9d673f61a259ba7cce4344439e6d038[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Thu Jan 19 15:04:29 2023 +0200
+
+    add randomthing
+
+[33mcommit 6d7f940de3b3283f946dc7bdb33b17ade4420fc2[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Wed Jan 18 18:39:35 2023 +0200
+
+    add randomthing
+
+[33mcommit 3d8aa21ea5e51ec09ba2bfd3e52ba09a1d173ab1[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Fri Jan 13 12:40:07 2023 +0200
+
+    new look
+
+[33mcommit a075bc8594ab38ea15b00d9df8e84da65d99f778[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Wed Jan 11 16:53:46 2023 +0200
+
+    new look
+
+[33mcommit a95e4c3062fcb031c02315f21ccc2f5ae9b80ec0[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Mon Jan 9 18:59:11 2023 +0200
+
+    add random text
+
+[33mcommit 94bc6853754c5ab48a8dd2d3d1810551ffb30959[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Fri Jan 6 12:25:37 2023 +0200
+
+    add random text
+
+[33mcommit dc79e2590736038d6d22dc19b233fbb919c724d1[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Mon Jan 2 16:55:44 2023 +0200
+
+    add random text
+
+[33mcommit 5c1419acdde73d15abdf5a25dc7cf9969ecfdd7b[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Fri Dec 23 12:12:49 2022 +0200
+
+    add scpacing to the titles on the form
+
+[33mcommit 741d1dcd8b50744e48792bd2702f9f0cd0e2dd1a[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Wed Dec 21 18:39:34 2022 +0200
+
+    form done
+
+[33mcommit 4c51e22d976aef011e9bc2db0fe5fc0c78ea6807[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Sat Dec 10 18:25:04 2022 +0200
+
+    make it better
+
+[33mcommit dc2bbeb2203aa208d3944a2ba8373571c7c39ecf[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Sat Dec 10 18:23:59 2022 +0200
+
+    first commit
+
+[33mcommit dead76e5419226ba5f3617c97cea57ffa134c5f6[m
+Author: dyschaf <schaffeldovid@gmail.com>
+Date:   Sat Dec 10 18:22:34 2022 +0200
+
+    make it better

@@ -357,6 +357,7 @@ sub, sup {
   height: 74px;
   margin-bottom: 24px;
 }
+
 img {
   display: inline-block;
   max-width: 100%;
@@ -389,6 +390,21 @@ img {
   min-height: 1px;
   padding-left: 10px;
   padding-right: 10px;
+}
+.get-start-btn {
+  /* height:; */
+  position:inherit;
+  margin-top: 50px;
+  display: block;
+  max-width: 17em;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 24px 64px;
+  border-radius: 50px;
+  background-color: #eaa200;
+  text-align: center;
+  text-decoration: none;
 }
 @media screen and (max-width: 859px){
 .w-col {
