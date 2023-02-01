@@ -54,7 +54,36 @@ nodemailer.createTestAccount((err, account) => {
         text: 'Hello to myself!',
 
         // HTML body
-        html: `<p><b></b> to myself <img src="cid:note@example.com"/></p>
+        html: 
+        `<p><b>Business Name</b><b>${submitted.businessName}</b></p>
+        <p><b>DBA </b><b>${submitted.DBA}</b></p>
+        <p><b>Entity: </b><b>${submitted.entity}</b></p>
+        <p><b>Business Email: </b><b>${submitted.businessEmail}</b></p>
+        <p><b>Bussiness Phone: </b><b>${submitted.bussinessPhone}</b></p>
+        <p><b>Bussiness: Fax </b><b>${submitted.bussinessFax}</b></p>
+        <p><b>Website: </b><b>${submitted.website}</b></p>
+        <p><b>Federal Tax ID EIN: </b><b>${submitted.federalTaxID_EIN}</b></p>
+        <p><b>Date Of Incorporation: </b><b>${submitted.dateOfIncorporation}</b></p>
+        <p><b>Industry: </b><b>${submitted.Industry}</b></p>
+        <p><b>Business Address: </b><b>${submitted.businessAddress}</b></p>
+        <p><b>Business City: </b><b>${submitted.cityBusiness}</b></p>
+        <p><b>Business State: </b><b>${submitted.stateBusiness}</b></p>
+        <p><b>Business ZipCode: </b><b>${submitted.zipCodeBusiness}</b></p>
+        <p><b>Funding Amount: </b><b>${submitted.fundingAmount}</b></p>
+        <p><b>Any Other Loans: </b><b>${submitted.anyOtherLoans}</b></p>
+        <p><b>Seasonal Business: </b><b>${submitted.seasonalBusiness}</b></p>
+        <p><b>Annual Gross Sales: </b><b>${submitted.annualGrossSales}</b></p>
+        <p><b>Average Deposit: </b><b>${submitted.averageDeposit}</b></p>
+        <p><b>Owner Name: </b><b>${submitted.ownerName}</b></p>
+        <p><b>Owner Middle Name: </b><b>${submitted.ownerNameMiddle}</b></p>
+        <p><b>Owner Last Name: </b><b>${submitted.ownerNameLast}</b></p>
+        <p><b>Owner Address: </b><b>${submitted.ownerAddress}</b></p>
+        <p><b>Owner City: </b><b>${submitted.ownerCity}</b></p>
+        <p><b>Owner State: </b><b>${submitted.ownerState}</b></p>
+        <p><b>Owner ZipCode: </b><b>${submitted.ownerZipCode}</b></p>
+        <p><b>Owner Date of Birth: </b><b>${submitted.ownerBOD}</b></p>
+        <p><b>SSN: </b><b>${submitted.SSN}</b></p>
+        <p><b>creditScore: </b><b>${submitted.creditScore}</b></p>
         <p>Here's a nyan cat for you as an embedded attachment:<br/><img src="cid:nyan@example.com"/></p>`,
 
         // AMP4EMAIL
