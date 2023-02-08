@@ -506,7 +506,7 @@ function Forms() {
   return (
     <div className='backgroundForm'>
     <div className="form">
-      <Box component={"form"} sx={{ m: 1 }} noValidate autoComplete={"off"}>
+      <Box component={"form"} sx={{ m: 1 }} autoComplete={"on"}>
         <h1 className='padding-top-bottom'>Business Information</h1>
         <TextField
           sx={{ m: 1 }}
@@ -913,7 +913,7 @@ function Forms() {
           // width
           // required
           // helperText='Please enter a number from 1 to 100.'
-          onClick={HandleSubmit}
+          onSubmit={HandleSubmit}
           // {/* // onChange={(e) => setEmail(e.target.value)} */}
         />
       </Box>
