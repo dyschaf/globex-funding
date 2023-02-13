@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import RandomInfo1 from "./RandomInfo1"
 import RandomInfo2 from "./RandomInfo2"
 import RandomInfo3 from "./RandomInfo3"
+import RandomInfo4 from "./RandomInfo4"
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
@@ -71,6 +72,7 @@ function Home() {
         {/* <RandomInfo1/> */}
         <RandomInfo2/>
         <RandomInfo3/>
+        <RandomInfo4/>
 
         </>
         );
