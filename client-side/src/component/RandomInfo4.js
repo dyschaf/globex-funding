@@ -42,6 +42,8 @@ function RandomInfo4(){
                     {/* </div> */}
                     {/* <div className="w-slider-dot" data-wf-ignore="" aria-label="Show slide 2 of 2" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;"> */}
                     {/* </div> */}
+{/* test */}
+        
                 </div>
             </div>
         </div>
