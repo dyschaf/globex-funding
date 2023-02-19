@@ -494,4 +494,23 @@ img {
   .rec-wrapper {
       display: none
   }}
+@media screen and (max-width: 891px){
+  .rec-testi-img-wrapper, img {
+      display: none
+  
+  }
+
+  .heading-4 {
+    display: block;
+    /* margin-top: 200px; */
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .w-layout-grid{
+    display: block;
+  }
+}
   
