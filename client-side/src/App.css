@@ -408,7 +408,7 @@ img {
   padding-left: 10px;
   padding-right: 10px;
 }
-img, svg {
+.testi-img-wrapper img, svg {
   vertical-align: middle;
   margin: 100px;
   border: solid gold;
