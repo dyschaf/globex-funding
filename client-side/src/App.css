@@ -161,11 +161,18 @@
   background-repeat: no-repeat;
 
 }
+
 .rec-wrapper{
   display: flex;
   width: 380px;
   height: 150px;
   align-items: center;
+}
+#rec-wrapper1{
+  margin-left: 50px;
+}
+#rec-wrapper3{
+  margin-right: 50px;
 }
 .cards-background{
   padding-bottom: 70px;
@@ -326,7 +333,8 @@ sub, sup {
   padding-right: 20px;
   padding-left: 20px;
 }
-.get-start-btn {
+
+/* .get-start-btn {
   display:block;
   max-width: 17em;
   margin-top: 60px !important;
@@ -338,7 +346,7 @@ sub, sup {
   background-color: #eaa200;
   text-align: center ;
   text-decoration: none;
-}
+} */
 /* .w-inline-block {
   max-width: 100%;
   display: inline-block;
@@ -355,8 +363,9 @@ sub, sup {
 
 .busi-card-style {
   /* width: 33.33333333%; */
-  height: 400px;
+  /* height: 400px; */
   min-height: 304px;
+  margin-bottom: 50px;
   padding: 26px 26px 32px;
   border-radius: 15px;
   background-color: #fff;
@@ -399,10 +408,23 @@ img {
   padding-left: 10px;
   padding-right: 10px;
 }
+img, svg {
+  vertical-align: middle;
+  margin: 100px;
+  border: solid gold;
+}
+.heading-4 {
+  display: flex;
+  margin-top: 200px;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+}
 .get-start-btn {
-  /* height:; */
-  position:inherit;
-  margin-top: 50px;
+  height:100px;
+  position:relative;
+  /* margin-top: 50px; */
   display: block;
   max-width: 17em;
   margin-top: 60px;
@@ -410,6 +432,7 @@ img {
   margin-left: auto;
   padding: 24px 64px;
   border-radius: 50px;
+  margin-top: 350px !important;
   background-color: #eaa200;
   text-align: center;
   text-decoration: none;
@@ -450,3 +473,25 @@ img {
     padding-right: 40px;
     padding-left: 40px;}
 }
+@media screen and (max-width: 780px){
+  .w-layout-grid {
+    padding: 50px;
+    display: block;
+  }
+}
+@media screen and (max-width: 991px){
+.busi-card-style.crd-shadow {
+    min-height: 320px;
+    padding: 15px 15px 20px;
+}
+}
+@media screen and (max-width: 767px){
+.sec-business {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}}
+@media screen and (max-width: 891px){
+  .rec-wrapper {
+      display: none
+  }}
+  

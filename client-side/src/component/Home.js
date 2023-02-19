@@ -30,18 +30,18 @@ function Home() {
                 </div>
                 
                 <div id="w-node-_664239d4-ff38-e477-4f15-a0aad0c916f5-1fe1565b" className="cards-background tb-hide">
-                    <div className="rec-wrapper">
-                        <div className="rec-icon-box">
+                    <div className="rec-wrapper" id='rec-wrapper1'>
+                        <div className="rec-icon-box" >
                             <img src="https://uploads-ssl.webflow.com/61f3ea34d716a5986fe5ec74/61f53e72fef6f26fe9fe15f4_Briefcase.svg" loading="lazy" alt="" className="rec-icon"></img>
                         </div>
-                            <div className="rec-txt-box">
-                                <div className="rec-txt-style">Complete our online application or speak with funding specialist.</div>
-                                <div className="rec-btn">
-                                <div className="rec-btn-txt">Prequalify Now</div>
-                                <img src="https://uploads-ssl.webflow.com/61f3ea34d716a5986fe5ec74/61f53e71773d630a5b3f3098_Arrow.svg" loading="lazy" alt=""></img>
-                                </div>
+                        <div className="rec-txt-box">
+                            <div className="rec-txt-style">Complete our online application or speak with funding specialist.</div>
+                            <div className="rec-btn">
+                            <div className="rec-btn-txt">Prequalify Now</div>
+                            <img src="https://uploads-ssl.webflow.com/61f3ea34d716a5986fe5ec74/61f53e71773d630a5b3f3098_Arrow.svg" loading="lazy" alt=""></img>
                             </div>
                         </div>
+                    </div>
                     <div className="rec-wrapper">
                         <div className="rec-icon-box">
                             <img src="https://uploads-ssl.webflow.com/61f3ea34d716a5986fe5ec74/61f53eaff6f6996b4a74e0cc_timelap.svg" loading="lazy" alt="" className="rec-icon"></img>
@@ -54,7 +54,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="rec-wrapper">
+                    <div className="rec-wrapper" id='rec-wrapper3'>
                         <div className="rec-icon-box">
                             <img src="https://uploads-ssl.webflow.com/61f3ea34d716a5986fe5ec74/61f53ece0b14990b79c166bf_Dollar.svg" loading="lazy" alt="" className="rec-icon dlr-icon"></img>   
                         </div>

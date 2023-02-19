@@ -1,5 +1,6 @@
 function RandomInfo2 (){
 return(
+    // <div>
     <div className="mycontain w-container">
         <div className="w-layout-grid grid">
             <div>
@@ -34,6 +35,7 @@ return(
             </div>
         </div>
     </div>
+    // </div>
 )
 }
 export default RandomInfo2
