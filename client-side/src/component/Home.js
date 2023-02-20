@@ -26,7 +26,7 @@ function Home() {
                     </b>
                     <h6>Avoid unneeded hassle with our direct quick and easy funding.</h6>
                     <br></br>
-                    <Button variant="secondary">Get a Quote</Button>{' '}
+                    <Button variant="secondary" href="form">Get a Quote</Button>{' '}
                 </div>
                 
                 <div id="w-node-_664239d4-ff38-e477-4f15-a0aad0c916f5-1fe1565b" className="cards-background tb-hide">

@@ -396,10 +396,10 @@
     background-size: auto;
     background-repeat: no-repeat;
   }
-  div img, svg {
+  .picReveiw img, svg {
     vertical-align: middle;
     margin: 100px;
-    border: solid gold;
+    /* border: solid gold; */
   }
   .heading-4 {
     display: flex;

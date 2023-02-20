@@ -49,10 +49,10 @@ function RandomInfo3(){
             </div>
             
         </div>
-        <a href="/application" className="get-start-btn w-inline-block">
+        {/* <a href="/application" className="get-start-btn w-inline-block">
         <div className="get-start-txt heading-4">Get Started</div>
     
-    </a>
+    </a> */}
     </>
     )
 }

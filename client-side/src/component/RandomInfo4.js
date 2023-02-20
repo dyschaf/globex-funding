@@ -7,7 +7,7 @@ function RandomInfo4(){
                     <div className="slide w-slide" aria-label="1 of 2" role="group" 
                     // style="transform: translateX(0px); opacity: 1;"
                     >
-                        <div className="w-layout-grid heading-4 grid-4">
+                        <div className="w-layout-grid heading-4 grid-4 picReveiw firstPicReveiw">
                             <div id="w-node-_7ab41c6c-3c05-373a-1a4e-5b176a760175-1fe1565b" className="testi-img-wrapper img">
                                 <img src="https://uploads-ssl.webflow.com/61f3ea34d716a5986fe5ec74/61f64ec752d2965bf466be41_Testimonial-img.jpg" loading="lazy" alt="" className="testi-img"></img>
                             </div>
@@ -20,7 +20,7 @@ function RandomInfo4(){
                     <div className="slide w-slide" aria-label="2 of 2" role="group" 
                     // style="transform: translateX(0px); opacity: 1;" aria-hidden="true"
                     >
-                        <div className="testi-slide-wrapper w-row w-layout-grid grid-4" aria-hidden="true">
+                        <div className="testi-slide-wrapper w-row w-layout-grid grid-4  picReveiw" aria-hidden="true">
                             {/* <div className="w-col w-col-2" aria-hidden="true">
                             </div> */}
                             <div className="testi-img-wrapper w-col w-col-4 img" aria-hidden="true">
