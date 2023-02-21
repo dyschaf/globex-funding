@@ -441,6 +441,10 @@ img {
   text-align: center;
   text-decoration: none;
 }
+.center{
+  margin-left:45vw;
+  margin-right: auto;
+}
 @media screen and (max-width: 859px){
   .get-start-btn {
 
