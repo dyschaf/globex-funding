@@ -48,11 +48,11 @@ function RandomInfo4(){
                 </>
                 :
                 <>
-                <input className="center" type="radio" name="review" value="true"  onChange={()=>{setSelect(true)}}></input>
-                <label for="true">1</label>
+                <input className="center " type="radio" name="review" value="true"  onChange={()=>{setSelect(true)}}></input>
+                <label for="true">1   </label>
                 </>
                 }
-                <input type="radio" name="review" value='false'onChange={()=>{setSelect(false)}}></input>
+                <input className="left20px"type="radio" name="review" value='false'onChange={()=>{setSelect(false)}}></input>
                 <label for="false">2</label>
                 
                 

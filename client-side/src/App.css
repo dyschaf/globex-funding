@@ -441,6 +441,9 @@ img {
   text-align: center;
   text-decoration: none;
 }
+.left20px{
+  margin-left:10px
+}
 .center{
   margin-left:45vw;
   margin-right: auto;
