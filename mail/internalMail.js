@@ -86,6 +86,8 @@ nodemailer.createTestAccount((err, account) => {
         <p><b>creditScore: </b><b>${submitted.creditScore}</b></p>
         <p>Here's a nyan cat for you as an embedded attachment:<br/><img src="cid:nyan@example.com"/></p>`,
 
+        // test
+
         // AMP4EMAIL
         amp: `<!doctype html>
         <html ⚡4email>

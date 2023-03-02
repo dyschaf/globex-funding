@@ -1,6 +1,6 @@
 function Footer(){
     return(
-        <>
+        <div className="footer">
             <div>
                 <img src="" alt=""></img>
             </div>
@@ -10,12 +10,13 @@ function Footer(){
                 <h6>Apply</h6>
                 <h6>ISO Partnership</h6>
             </div>
-            <div>
+            <div className="footerRight">
                 <h2>Contact Info</h2>
                 <h6>Number</h6>
                 <h6>Email</h6>
             </div>
-        </>
+        </div>
         
     )
 }
+export default Footer

@@ -4,7 +4,7 @@
 
 export const submitted = async (req, res) => {
   const  data  = req.body;
-  console.log(data)
+  
   
  
   // try {
