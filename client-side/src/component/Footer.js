@@ -13,7 +13,7 @@ function Footer(){
                 <a href="/form">
                     <h6>Apply</h6>
                 </a>
-                <a href="">
+                <a href="/iso-partnerships">
                     <h6>ISO Partnership</h6>
                 </a>
             </div>
