@@ -429,14 +429,15 @@ img {
 }
 .footer{
   display: flex;
-  position: relative;
+  justify-content:space-evenly;
+  /* position: relative; */
 }
-.footerRight{
-  position: absolute;
+/* .footerRight{
+  position: absolute; */
   /* right:0% !important; */
-  right: 0;
+  /* right: 0;
   margin-right: 20px;
-}
+} */
 @media screen and (max-width: 859px){
   .get-start-btn {
 
