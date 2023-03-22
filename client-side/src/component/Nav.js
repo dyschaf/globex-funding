@@ -3,12 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from "./img/logo.jpeg"
 function Nav_page() {
   return (
     <div className='fixed'>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container className='sticky'>
-        <Navbar.Brand href="/">Globex Funding</Navbar.Brand>
+        <Navbar.Brand href="/"><img className='headerLogo' src={logo}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

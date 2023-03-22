@@ -1,8 +1,9 @@
+import logo from "./img/logo.jpeg"
 function Footer(){
     return(
         <div className="footer">
             <div>
-                <img src="" alt=""></img>
+                <img className="footerLogo" src={logo} alt="logo"></img>
             </div>
             <div>
                 
