@@ -8,7 +8,7 @@ function Footer(){
             <div>
                 
                 <h2>SITE</h2>
-                <a href="">
+                <a href="/">
                     <h6>Home</h6>
                 </a>
                 <a href="/form">
