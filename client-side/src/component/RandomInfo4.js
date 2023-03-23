@@ -1,6 +1,35 @@
+import { selectClasses } from "@mui/material";
 import React from "react"
+import { useHref } from "react-router-dom";
+
 function RandomInfo4(){
-    const [select, setSelect] =React.useState(true)
+    const [select,setSelect ] =React.useState(true)
+    // function loop(){
+    // while (true) {
+        
+    // }}
+    // loop()
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+            setSelect(select => !select);
+        }, 7000);
+        return () => clearInterval(interval);
+      }, []);
+    
+           
+    // setInterval(()=> {
+    //     console.log("test")
+    //         if (select) {
+                
+    //             ()=>{setSelect(false)}; // toggle to false
+    //         } else {
+                
+    //             ()=>{setSelect(true)}; // toggle to true
+    //         }
+    //         // select?()=>{setSelect(fasle)}:()=>{setSelect(true)}
+
+    //     // select?!select:select
+    // }, 5000);
     return(
         <>
 
@@ -41,15 +70,20 @@ function RandomInfo4(){
                 <>
                 <input className="center" type="radio" name="review" checked="checked" value="true"  onChange={()=>{setSelect(true)}}></input>
                 <label for="true">1</label>
+                <input className="left20px"type="radio" name="review" value='false'onChange={()=>{setSelect(false)}}></input>
+                <label for="false">2</label>
                 </>
                 :
                 <>
-                <input className="center " type="radio" name="review" value="true"  onChange={()=>{setSelect(true)}}></input>
-                <label for="true">1   </label>
+                    <input className="center " type="radio" name="review"  value="true"  onChange={()=>{setSelect(true)}}></input>
+                    <label for="true">1   </label>
+                    
+                    <input className="left20px"type="radio" name="review"  checked="checked" value='false'onChange={()=>{setSelect(false)}}></input>
+                    <label for="false">2</label>
                 </>
                 }
-                <input className="left20px"type="radio" name="review" value='false'onChange={()=>{setSelect(false)}}></input>
-                <label for="false">2</label>
+                
+                
                 
                 
 
@@ -69,5 +103,7 @@ function RandomInfo4(){
         </div>
         </>
     )
+    
 }
+
 export default RandomInfo4
