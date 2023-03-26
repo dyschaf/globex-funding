@@ -90,8 +90,11 @@ function RandomInfo4(){
                     <label for="false">2</label>
                 </>
                 }
-                <button onClick={() => setIsRunning(false)}>Pause</button>
-                <button onClick={() => setIsRunning(true)}>Play</button>
+                {isRunning ?
+                <button onClick={() => setIsRunning(false)}><b>||</b></button>
+                :
+                <button onClick={() => setIsRunning(true)}>{"I>"}</button>
+                }
                 
                 
                 
