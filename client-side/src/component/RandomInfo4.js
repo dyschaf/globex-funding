@@ -4,17 +4,25 @@ import { useHref } from "react-router-dom";
 
 function RandomInfo4(){
     const [select,setSelect ] =React.useState(true)
+    const [isRunning, setIsRunning] = React.useState(true);
     // function loop(){
     // while (true) {
         
     // }}
     // loop()
+    
+      
     React.useEffect(() => {
-        const interval = setInterval(() => {
+        let intervalId;
+
+        if (isRunning) {
+        intervalId = setInterval(() => {
             setSelect(select => !select);
         }, 7000);
-        return () => clearInterval(interval);
-      }, []);
+        }
+
+        return () => clearInterval(intervalId);
+    }, [isRunning]);
     
            
     // setInterval(()=> {
@@ -82,7 +90,8 @@ function RandomInfo4(){
                     <label for="false">2</label>
                 </>
                 }
-                
+                <button onClick={() => setIsRunning(false)}>Pause</button>
+                <button onClick={() => setIsRunning(true)}>Play</button>
                 
                 
                 
@@ -95,6 +104,7 @@ function RandomInfo4(){
                     <div className="w-slider-dot" data-wf-ignore="" aria-label="Show slide 2 of 2" aria-pressed="false" role="button" tabindex="-1" 
                     // style="margin-left: 3px; margin-right: 3px;"
                     >
+                        
                     </div>
 {/* test */}
         
